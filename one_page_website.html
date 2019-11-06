@@ -1,0 +1,157 @@
+﻿<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Megan's adventures</title>
+    <link rel="stylesheet" type="text/css" href="./css/one_page_website.css" />
+    <script src="javascript/js.js"></script>
+</head>
+<body>
+    <!-- Header section-->
+    <section>
+        <header>
+            <div>
+                <h1>Megan's adventures</h1>
+                <p>Join the fun.</p>
+            </div>
+        </header>
+    </section>
+    <!-- End of header section-->
+    <!-- Nav bar-->
+    <section>
+        <div>
+            <nav>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About Me</a></li>
+                    <li><a>Videos</a></li>
+                    <li><a>Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- End nav bar-->
+    <!-- Home section-->
+    <section>
+        <div>
+            <h2>Welcome</h2>
+            <p>blurb</p>
+        </div>
+    </section>
+    <!-- end home section-->
+    <!-- About me section-->
+    <section>
+        <div>
+            <h2>about me</h2>
+            <p>Text about me</p>
+            <img src="" height="200" width="300">
+        </div>
+    </section>
+    <!--end about me section-->
+
+
+    <!--Pictures -->
+
+    <div class="row">
+        <div class="column">
+            <img src="https://source.unsplash.com/user/asoggetti/600x300" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://source.unsplash.com/user/asoggetti/600x301" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://source.unsplash.com/user/asoggetti/600x302" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="https://source.unsplash.com/user/asoggetti/600x303" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="https://source.unsplash.com/user/asoggetti/600x300" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="https://source.unsplash.com/user/asoggetti/600x301" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="https://source.unsplash.com/user/asoggetti/600x302" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="https://source.unsplash.com/user/asoggetti/600x303" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+            <div class="column">
+                <img class="demo cursor" src="https://source.unsplash.com/user/asoggetti/300x200" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="https://source.unsplash.com/user/asoggetti/300x200" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="https://source.unsplash.com/user/asoggetti/300x200" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="https://source.unsplash.com/user/asoggetti/300x200" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+        </div>
+    </div>
+
+
+    <!--Videos section-->
+    <section>
+        <div>
+            <h2>Videos</h2>
+            <p>Text about the videos</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2uJPDmch9IU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <!-- End videos section-->
+    <!--Contact section-->
+    <section class="contact">
+        <div class="form">
+            <h2>Send me a message</h2>
+            <p>I'd love to hear from you.</p>
+            <div>
+                <form action="">
+                    Name:
+                    <input type="text" name="Name" />
+                    Email:
+                    <input type="text" name="email address" />
+                    Message:
+                    <input type="text" name="message" />
+                    <input type="submit" value="Send" />
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--end of Contact section-->
+    <!--Footer section-->
+    <section>
+        <div class="footer">
+            <footer>
+                <p>All rights reserved</p>
+            </footer>
+        </div>
+    </section>
+    <!--end of Footer section-->
+</body>
+</html>
